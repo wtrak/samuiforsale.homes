@@ -7,6 +7,8 @@
   <meta name="description" content="Browse Koh Samui homes and villas for sale. Discover beachfront properties, hillside residences, and smart investment opportunities." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://samuiforsale.homes/" />
+  <link rel="preconnect" href="https://kohsamui.investments">
+  <link rel="dns-prefetch" href="https://kohsamui.investments">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Samui Homes For Sale" />
@@ -58,20 +60,46 @@
     <div class="badge">SamuiForSale<span style="opacity:.7">.homes</span></div>
 
     <div class="card" role="region" aria-label="Samui homes for sale intro">
-      <h1>Samui Homes For Sale</h1>
+      <h1>Find Your Home in Koh Samui</h1>
       <p>From beachfront villas to hillside residences, Samui offers unmatched opportunities to invest in Thailand’s most desirable island destination.</p>
       <p style="opacity:.9">Browse curated listings and connect with trusted experts who know the Samui market inside and out.</p>
+
       <a class="cta" href="https://kohsamui.investments/?utm_source=samuiforsale.homes&utm_medium=referral&utm_campaign=cta">
-  Learn more &nbsp;→
-</a>
+        View Samui listings &nbsp;→
+      </a>
+      <p style="font-size:13px;opacity:.85;margin-top:10px">Private intake • No spam • Expert-vetted properties</p>
+
+      <p style="margin-top:10px">
+        <a class="cta" style="background:transparent;border-color:rgba(255,255,255,.35)"
+           href="https://kohsamui.investments/guide.html?utm_source=samuiforsale.homes&utm_medium=referral&utm_campaign=soft">
+          Preview the buyer’s guide &nbsp;→
+        </a>
+      </p>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function(){
+          const cta = document.querySelector('.cta');
+          if(!cta) return;
+          cta.addEventListener('click', function(){
+            try {
+              gtag('event', 'cta_click', {
+                event_category: 'engagement',
+                event_label: 'samuiforsale.homes_primary',
+                value: 1
+              });
+            } catch(e){}
+          });
+        });
+      </script>
     </div>
 
     <div class="foot">
-  Private intake • No spam • HTTPS secure
-  <div style="font-size:11px;opacity:.6;margin-top:4px">
-    <a href="/faq" style="color:#aaa;text-decoration:none">FAQ</a> • 
-    <a href="/guide" style="color:#aaa;text-decoration:none">Guide</a>
+      Private intake • No spam • HTTPS secure
+      <div style="font-size:11px;opacity:.6;margin-top:4px">
+        <a href="/faq" style="color:#aaa;text-decoration:none">FAQ</a> • 
+        <a href="/guide" style="color:#aaa;text-decoration:none">Guide</a>
+      </div>
+    </div>
   </div>
-</div>
 </body>
 </html>
